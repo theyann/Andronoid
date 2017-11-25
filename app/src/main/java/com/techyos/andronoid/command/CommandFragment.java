@@ -181,7 +181,7 @@ public class CommandFragment extends FragmentBase implements View.OnClickListene
                         break;
                     case ARCOMMANDS_ARDRONE3_PILOTINGSTATE_FLYINGSTATECHANGED_STATE_LANDED:
                         changingState = false;
-                        inFlight = true;
+                        inFlight = false;
                         break;
                     case ARCOMMANDS_ARDRONE3_PILOTINGSTATE_FLYINGSTATECHANGED_STATE_LANDING:
                         changingState = true;
