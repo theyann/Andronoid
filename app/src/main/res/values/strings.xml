@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Andronoid</string>
+
+    <string name="button_discover">Find Dronage</string>
 </resources>
