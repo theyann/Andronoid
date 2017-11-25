@@ -1,4 +1,4 @@
-package com.techyos.andronoid;
+package com.techyos.andronoid.discovery;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
@@ -11,6 +11,11 @@ import java.util.List;
 public class DroneListAdapter extends RecyclerView.Adapter<DroneListItem> {
 
     private List<ARDiscoveryDeviceService> drones = new ArrayList<>();
+    private DroneListItem.DroneListItemClickListener listener;
+
+    public DroneListAdapter(DroneListItem.DroneListItemClickListener listener) {
+        this.listener = listener;
+    }
 
     public void setDrones(List<ARDiscoveryDeviceService> drones) {
         this.drones = drones;
@@ -19,7 +24,7 @@ public class DroneListAdapter extends RecyclerView.Adapter<DroneListItem> {
 
     @Override
     public DroneListItem onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new DroneListItem(parent);
+        return new DroneListItem(parent, listener);
     }
 
     @Override

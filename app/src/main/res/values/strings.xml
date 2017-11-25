@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Andronoid</string>
 
+    <!-- Discovery -->
     <string name="button_discover">Find Dronage</string>
+
+    <!-- Command -->
+    <string name="command_title">Let\'s do this!</string>
+    <string name="button_take_off">Take off</string>
+    <string name="button_land">Land</string>
+    <string name="button_exist">Exit</string>
+
+    <string name="drone_battery_level">battery</string>
 </resources>
